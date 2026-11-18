@@ -24,7 +24,7 @@ class AdminSeeder extends Seeder
             ]);
         }
 
-        // 2. Akun Mahasiswa Dummy untuk Pengujian Role & Middleware
+        // 2. Akun Mahasiswa dummy untuk pengujian role & middleware
         if (!User::where('email', 'mahasiswa@telkomlibrary.ac.id')->exists()) {
             User::create([
                 'name'              => 'Rio Mahasiswa',
